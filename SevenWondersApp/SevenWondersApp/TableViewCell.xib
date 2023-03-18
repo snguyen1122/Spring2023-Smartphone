@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="205" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="SevenWondersApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRy-fI-7zl">
+                        <rect key="frame" x="5" y="5" width="290" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="iSp-VI-gM5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChichenItza" translatesAutoresizingMaskIntoConstraints="NO" id="2ad-vl-KAh">
+                        <rect key="frame" x="5" y="34" width="290" height="160"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nRy-fI-7zl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="1wP-5F-xEM"/>
+                    <constraint firstAttribute="trailing" secondItem="nRy-fI-7zl" secondAttribute="trailing" constant="5" id="4oh-rv-YEn"/>
+                    <constraint firstItem="nRy-fI-7zl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="BiI-d1-h1q"/>
+                    <constraint firstItem="2ad-vl-KAh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OdL-fR-37h"/>
+                    <constraint firstItem="2ad-vl-KAh" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="QNT-5V-R2q"/>
+                    <constraint firstItem="2ad-vl-KAh" firstAttribute="leading" secondItem="nRy-fI-7zl" secondAttribute="leading" id="SV1-TV-vs8"/>
+                    <constraint firstItem="2ad-vl-KAh" firstAttribute="top" secondItem="nRy-fI-7zl" secondAttribute="bottom" constant="4" id="qwW-h3-HBF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ImageContainer" destination="2ad-vl-KAh" id="G60-ef-5PK"/>
+                <outlet property="ImageLabel" destination="nRy-fI-7zl" id="SXW-4V-f6v"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="48.239436619718312"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ChichenItza" width="1920" height="1434"/>
+    </resources>
+</document>

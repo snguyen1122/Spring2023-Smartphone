@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  LocalizationExample
+
+  Created by Son Nguyen on 3/25/23.
+  
+*/
+
+"hello_world" = "Xin chao";

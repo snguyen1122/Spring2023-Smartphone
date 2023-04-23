@@ -17,28 +17,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var imageTitles : [String] = [String]()
 
     @IBOutlet weak var tblView: UITableView!
-    var uploadImageVC : UIViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getImages()
-        uploadImageVC = tabBarController?.viewControllers?[0]
-        print(uploadImageVC?.title)
     }
     
     func getImages()
     {
-        do{
-            let stocks = realm.objects(ImageData.self)
-            for img in stocks{
-                guard let uiImage = UIImage(data: img.image!) else {return}
-                images.append(uiImage)
-                locations.append(img.location)
-                imageTitles.append(img.title)
-            }
-        }
-        catch let error as NSError {
-            print("Unable to get values from the DB")
+        let stocks = realm.objects(ImageData.self)
+        for img in stocks{
+            guard let uiImage = UIImage(data: img.image!) else {return}
+            images.append(uiImage)
+            locations.append(img.location)
+            imageTitles.append(img.title)
         }
     }
     

@@ -87,7 +87,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         let location = locationText
         guard let title = txtTitle.text else {return}
         
-        let imageData: Data? = img.jpegData(compressionQuality: 0.1)
+        let imageData: Data? = img.jpegData(compressionQuality: 1)
         let imgData: ImageData = ImageData()
         imgData.title = title
         imgData.location = location
